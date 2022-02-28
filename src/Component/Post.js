@@ -60,11 +60,26 @@ function Post({ post, index }) {
                     {tag === "react" && (
                       <span className=" text-primary-blue">#</span>
                     )}
+                    {tag === "discuss" && (
+                      <span className=" text-primary-blue">#</span>
+                    )}
+                    {tag === "jobs" && (
+                      <span className=" text-primary-blue">#</span>
+                    )}
+                    {tag === "dart" && (
+                      <span className=" text-yellow-main">#</span>
+                    )}
+                    {tag === "blockchain" && (
+                      <span className=" text-yellow-main">#</span>
+                    )}
+                    {tag === "web3" && (
+                      <span className=" text-yellow-main">#</span>
+                    )}
                     {tag}
                   </p>
                 ))}
               </div>
-              <div className="flex justify-between">
+              <div className="flex flex-col md:flex-row justify-between">
                 <div className="flex gap-10 items-center">
                   <div className="flex items-center gap-2 ">
                     <img src={reaction} alt="" />
@@ -75,7 +90,7 @@ function Post({ post, index }) {
                     <p>2 comments</p>
                   </div>
                 </div>
-                <div className="flex items-center gap-10">
+                <div className="flex items-center gap-10 w-full md:w-auto  justify-between mt-3">
                   <p className=" text-xs">12 min read</p>
                   <button className=" bg-secondary-save  text-secondary-sub rounded-lg cursor-pointer py-2 px-3 text-center">
                     save
@@ -135,12 +150,27 @@ function Post({ post, index }) {
                   {tag === "react" && (
                     <span className=" text-primary-blue">#</span>
                   )}
+                  {tag === "discuss" && (
+                    <span className=" text-primary-blue">#</span>
+                  )}
+                  {tag === "jobs" && (
+                    <span className=" text-primary-blue">#</span>
+                  )}
+                  {tag === "dart" && (
+                    <span className=" text-yellow-main">#</span>
+                  )}
+                  {tag === "blockchain" && (
+                    <span className=" text-yellow-main">#</span>
+                  )}
+                  {tag === "web3" && (
+                    <span className=" text-yellow-main">#</span>
+                  )}
                   {tag}
                 </p>
               ))}
             </div>
 
-            <div className="flex justify-between">
+            <div className="flex flex-col md:flex-row justify-between">
               <div className="flex gap-10 items-center">
                 <div className="flex items-center gap-2 ">
                   <img src={reaction} alt="" />
@@ -151,7 +181,7 @@ function Post({ post, index }) {
                   <p>2 comments</p>
                 </div>
               </div>
-              <div className="flex items-center gap-10">
+              <div className="flex items-center gap-10 w-full md:w-auto  justify-between mt-3">
                 <p className=" text-xs">12 min read</p>
                 <button className=" bg-secondary-save  text-secondary-sub rounded-lg cursor-pointer py-2 px-3 text-center">
                   save
@@ -163,14 +193,14 @@ function Post({ post, index }) {
       )}
       {index === 3 && (
         <div className=" py-10 px-12 flex ">
-          <div className="pt-10  flex justify-center  h-fit ">
+          <div className="pt-10  flex justify-center  h-full  w-1/5 ">
             <img
               src={devLogo}
               alt=""
-              className=" rounded-lg  w-1/2 h-3/5  -rotate-12"
+              className=" rounded-lg  w-1/2 -rotate-12"
             />
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center w-4/5">
             <h2 className="mb-4 font-bold">
               <a href="https://dev.to/" class=" mr-2 text-primary-blue">
                 DEV Community
