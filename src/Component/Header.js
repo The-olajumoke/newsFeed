@@ -3,7 +3,7 @@ import logo from "../Exports/logo.png";
 import { RiSearchLine } from "react-icons/ri";
 function Header() {
   return (
-    <div className=" flex justify-center h-56 bg-white-white py-2  fixed top-0 left-0 right-0">
+    <div className=" flex justify-center h-56 bg-white-white py-2  fixed top-0 left-0 right-0  z-50">
       <div className=" w-full md:w-4/5  flex justify-between">
         <div className="flex  gap-7 w-1/2">
           <img className="h-full" src={logo} alt="dev logo" />
