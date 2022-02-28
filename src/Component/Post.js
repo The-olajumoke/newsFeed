@@ -193,14 +193,14 @@ function Post({ post, index }) {
       )}
       {index === 3 && (
         <div className=" py-10 px-12 flex ">
-          <div className="pt-10  flex justify-center  w-1/5 ">
+          <div className="pt-10  flex justify-center  w-2/12 ">
             <img
               src={devLogo}
               alt=""
               className=" rounded-lg  h-50 -rotate-12"
             />
           </div>
-          <div className="flex flex-col items-center w-4/5">
+          <div className="flex flex-col items-center  w-10/12">
             <h2 className="mb-4 font-bold">
               <a href="https://dev.to/" class=" mr-2 text-primary-blue">
                 DEV Community
